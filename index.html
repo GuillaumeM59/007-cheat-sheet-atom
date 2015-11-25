@@ -6,18 +6,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Cheat-sheet Emmet</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -27,66 +21,288 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+
+
+
+
+        <div id="home">
+          <div class="container-fluid">
+
+            <!-- NAVIGATION -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" >
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Cheat-sheet CSS</a>
+                </div>
+                <div id="navbar" class="navbar-collapse navbar-right collapse">
+                  <ul class="list-unstyled nav navbar-nav">
+                    <li><a href="#synthaxe" class="btn btn-default" role="button">Synthaxe</a></li>
+                    <li><a href="#style" class="btn btn-default" role="button">Style</a></li>
+                    <li><a href="#position" class="btn btn-default" role="button">Positions</a></li>
+                    <li><a href="#about" class="btn btn-default" role="button">About</a></li>
+                    <li><a href="#contact" class="btn btn-default" role="button">Contact</a></li>
+                  </ul>
+                </div>
+                <!--/.navbar-collapse -->
+              </div>
+            </nav>
+
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 col-md-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+
+                <img id="logo" src="img/logoCSS3.png" alt="logo CSS 3" />
+              </div>
             </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <!--    HEADER END      -->
+
+        <div class="container">
+          <!-- CONTENT-->
+          <div class="row">
+            <section id="synthaxe" class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
+              <h2 id="content"><i class="fa fa-keyboard-o fa-2x"></i>Synthaxe en emmet</h2>
+              <p>
+                <code>
+                <ul>
+
+                <li>Inclure: &rt;</li>
+
+                <li>nav&rt;ul&rt;li<ul>
+                    <li>&lt;nav&rt;<ul>
+                        <li>&lt;ul&rt;<ul>
+                            <li>&lt;li&rt;&lt;/li&rt;</li>
+                        <li>&lt;/ul&rt;</li></ul></li>
+                    <li>&lt;/nav&rt;</li></ul></li></ul></li>
+
+                <li>Ajouter: +</li>
+
+                <li>div+p+bq<ul>
+                    <li>&lt;div&rt;&lt;/div&rt;</li>
+                    <li>&lt;p&rt;&lt;/p&rt;</li>
+                    <li>&lt;blockquote&rt;&lt;/blockquote&rt;</li></ul></li>
+
+                <li>A la ligne: ^</li>
+
+                <li>div+div&rt;p&rt;span+em^bq<ul>
+                    <li>&lt;div&rt;&lt;/div&rt;</li>
+                    <li>&lt;div&rt;<ul>
+                        <li>&lt;p&rt;&lt;span&rt;&lt;/span&rt;&lt;em&rt;&lt;/em&rt;&lt;/p&rt;</li>
+                        <li>&lt;blockquote&rt;&lt;/blockquote&rt;</li></ul></li>
+                    <li>&lt;/div&rt;</li></ul></li>
+
+                <li>div+div&rt;p&rt;span+em^^bq<ul>
+                    <li>&lt;div&rt;&lt;/div&rt;</li>
+                    <li>&lt;div&rt;<ul>
+                        <li>&lt;p&rt;&lt;span&rt;&lt;/span&rt;&lt;em&rt;&lt;/em&rt;&lt;/p&rt;</li></ul></li>
+                    <li>&lt;/div&rt;</li>
+                    <li>&lt;blockquote&rt;&lt;/blockquote&rt;</li></ul></li>
+
+                <li>Grouper: ()</li>
+
+                <li>div&rt;(header&rt;ul&rt;li*2&rt;a)+footer&rt;p<ul>
+                    <li>&lt;div&rt;<ul>
+                        <li>&lt;header&rt;<ul>
+                            <li>&lt;ul&rt;<ul>
+                                <li>&lt;li&rt;&lt;a href=""&rt;&lt;/a&rt;&lt;/li&rt;</li>
+                                <li>&lt;li&rt;&lt;a href=""&rt;&lt;/a&rt;&lt;/li&rt;</li></ul></li>
+                            <li>&lt;/ul&rt;</li></ul></li>
+                        <li>&lt;/header&rt;</li>
+                        <li>&lt;footer&rt;<ul>
+                            <li>&lt;p&rt;&lt;/p&rt;</li></ul></li>
+                        <li>&lt;/footer&rt;</li></ul></li>
+                    <li>&lt;/div&rt;</li></ul></li>
+
+                <li>(div&rt;dl&rt;(dt+dd)*3)+footer&rt;p<ul>
+                    <li>&lt;div&rt;<ul>
+                        <li>&lt;dl&rt;<ul>
+                            <li>&lt;dt&rt;&lt;/dt&rt;</li>
+                            <li>&lt;dd&rt;&lt;/dd&rt;</li>
+                            <li>&lt;dt&rt;&lt;/dt&rt;</li>
+                            <li>&lt;dd&rt;&lt;/dd&rt;</li>
+                            <li>&lt;dd&rt;&lt;/dd&rt;</li>
+                            <li>&lt;dt&rt;&lt;/dt&rt;</li></ul></li>
+                        <li>&lt;/dl&rt;</li></ul></li>
+                    <li>&lt;/div&rt;</li>
+                    <li>&lt;footer&rt;<ul>
+                        <li>&lt;p&rt;&lt;/p&rt;
+                    <li>&lt;/footer&rt;
+
+                <li>Multiplier: *
+
+                <li>ul&rt;li*5
+                    <li>&lt;ul&rt;
+                        <li>&lt;li&rt;&lt;/li&rt;
+                        <li>&lt;li&rt;&lt;/li&rt;
+                        <li>&lt;li&rt;&lt;/li&rt;
+                        <li>&lt;li&rt;&lt;/li&rt;
+                        <li>&lt;li&rt;&lt;/li&rt;
+                    <li>&lt;/ul&rt;
+
+                <li>Numeroter: $
+
+                <li>ul&rt;li.item$*5
+                    <li>&lt;ul&rt;
+                        <li>&lt;li class="item1"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item2"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item3"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item4"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item5"&rt;&lt;/li&rt;
+                    <li>&lt;/ul&rt;
+
+                <li>h$[title=item$]{Header $}*3
+                    <li>&lt;h1 title="item1"&rt;Header 1&lt;/h1&rt;
+                    <li>&lt;h2 title="item2"&rt;Header 2&lt;/h2&rt;
+                    <li>&lt;h3 title="item3"&rt;Header 3&lt;/h3&rt;
+
+                <li>ul&rt;li.item$$$*5
+                    <li>&lt;ul&rt;
+                        <li>&lt;li class="item001"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item002"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item003"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item004"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item005"&rt;&lt;/li&rt;
+                    <li>&lt;/ul&rt;
+
+                <li>ul&rt;li.item$@-*5
+                    <li>&lt;ul&rt;
+                        <li>&lt;li class="item5"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item4"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item3"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item2"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item1"&rt;&lt;/li&rt;
+                    <li>&lt;/ul&rt;
+
+                <li>ul&rt;li.item$@3*5
+                    <li>&lt;ul&rt;
+                        <li>&lt;li class="item3"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item4"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item5"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item6"&rt;&lt;/li&rt;
+                        <li>&lt;li class="item7"&rt;&lt;/li&rt;
+                    <li>&lt;/ul&rt;
+
+                <li>ID, Classes et Tableau:</li>
+
+                <li>#toto
+                    <li>&lt;div id="toto"&rt;&lt;/div&rt;
+
+                <li>.title
+                    <li>&lt;div class="title"&rt;&lt;/div&rt;
+
+                <li>em&rt;.class
+                    <li>&lt;em&rt;&lt;span class="class"&rt;&lt;/span&rt;&lt;/em&rt;
+
+                <li>ul&rt;.class
+                    <li>&lt;ul&rt;
+                        <li>&lt;li class="class"&rt;&lt;/li&rt;
+                    <li>&lt;/ul&rt;
+
+                <li>form#search.wide
+                    <li>&lt;form id="search" class="wide"&rt;&lt;/form&rt;
+
+                <li>p.class1.class2.class3
+                    <li>&lt;p class="class1 class2 class3"&rt;&lt;/p&rt;
+
+                <li>table&rt;.row&rt;.col
+                    <li>&lt;table&rt;
+                        <li>&lt;tr class="row"&rt;
+                            <li>&lt;td class="col"&rt;&lt;/td&rt;
+                        <li>&lt;/tr&rt;
+                    <li>&lt;/table&rt;
+
+                <li>Attributs personnalisés:</li>
+
+                <li>p[title="Hello world"]
+                    <li>&lt;p title="Hello world"&rt;&lt;/p&rt;</li>
+
+                <li>td[rowspan=2 colspan=3 title]
+                    <li>&lt;td rowspan="2" colspan="3" title=""&rt;&lt;/td&rt;</li>
+
+                <li>[a='value1' b="value2"]
+                    <li>&lt;div a="value1" b="value2"&rt;&lt;/div&rt;</li>
+
+                <li>Remplir entre les balises: {}</li>
+
+                <li>a{Click me}
+                    <li>&lt;a href=""&rt;Click me&lt;/a&rt;</li>
+
+                <li>p&rt;{Click }+a{here}+{ to continue}
+                    <li>&lt;p&rt;Click &lt;a href=""&rt;here&lt;/a&rt; to continue&lt;/p&rt;</li>
+
+                </ul>
+              </code>
+            </p>
+          </section>
+
+
+            <section class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
+              <h2 id="style"><i class="fa fa-text-height fa-2x"></i>Propriétés de style</h2>
+              <ul>
+                <li>
+            </li>
+              </ul>
+              <h2><i class="fa fa-arrows fa-2x"></i>Taille et bordures</h2>
+              <ul>
+                <li>
+                </li>
+              </ul>
+              <p><a class="btn btn-default" href="#" role="button">Positionnement</a></p>
+            </section>
+            <!--    SECTION STYLE END      -->
+
+            <section class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
+              <h2 id="position"><i class="fa fa-th fa-2x"></i>Positionnement</h2>
+              <ul>
+                <li>
+
+                </li>
+              </ul>
+            </section>
+            <!--    SECTION POSITION END      -->
+
+            <section class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12">
+              <h2 id="about"><i class="fa fa-hand-spock-o fa-2x"></i>A propos</h2>
+              <p>Cheat-sheet du langage CSS réalisé lors de l'autoformation au sain du programme SIMPLON. Je fais partie de la 1ère promotion de l'essaimage de Roubaix</p>
+              <p>
+                <a href="http://simplon.co/roubaix">
+                  <img src="img/Logo-Roubaix.jpeg" alt="simplon roubaix" class="img-responsive">
+                </a>
+              </p>
+            </section>
+            <!--    ABOUT END      -->
+
+            <section class="col-lg-5 col-md-10 col-md-offset-1 col-sm-12">
+              <h2 id="contact"><i class="fa fa-envelope-o fa-2x"></i>Contact</h2>
+              <p>Des remarques? contactez-moi! </p>
+              <p>Fan? suivez-moi! </p>
+              <ul class="list-unstyled list-inline">
+                <li><a class="btn btn-default" href="mailto:maanier-guillaume@orange.fr" role="button"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+                <li><a class="btn btn-default" href="http://github.com/GuillaumeM59" role="button"><i class="fa fa-github fa-lg"></i></a></li>
+                <li><a class="btn btn-default" href="#" role="button"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+                <li><a class="btn btn-default" href="#" role="button"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+              </ul>
+            </section>
+            <!--    CONTACT END      -->
+          </div>
+          <!-- END CONTAINER -->
+          <hr>
+
+          <footer class="text-center">
+            <p>&copy; Free to copy: Open source Project made by GuillaumeM59</p>
+          </footer>
         </div>
-      </div>
+        <!-- /container -->
 
-      <hr>
 
-      <footer>
-        <p>&copy; Company 2015</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
