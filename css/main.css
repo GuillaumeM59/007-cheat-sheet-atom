@@ -5,18 +5,13 @@
    ========================================================================== */
 
 
+body {padding-top: 50px;}
 
+h3 { font-weight: 600;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#home {
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  height: 600px;
+  padding-top: 50px;
+}
