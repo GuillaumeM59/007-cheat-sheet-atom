@@ -2,344 +2,1037 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Cheat-sheet Emmet</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Cheat-sheet Emmet</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
 
 
 
-        <div id="home">
-          <div class="container-fluid">
+  <div id="home">
+    <div class="container-fluid">
 
 
-            <!-- NAVIGATION -->
-            <nav class="navbar navbar-inverse navbar-fixed-top" >
-              <div class="container">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">Cheat-sheet Emmet</a>
-                </div>
-                <div class="navbar-collapse  collapse" id="navbar">
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#synthaxe" class="btn btn-default" role="button">Synthaxe</a></li>
-                    <li><a href="#style" class="btn btn-default" role="button">Style</a></li>
-                    <li><a href="#position" class="btn btn-default" role="button">Positions</a></li>
-                    <li><a href="#about" class="btn btn-default" role="button">About</a></li>
-                    <li><a href="#contact" class="btn btn-default" role="button">Contact</a></li>
-                  </ul>
-                </div>
-                <!--/.navbar-collapse -->
-              </div>
-            </nav>
-
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-2 col-lg-4 col-lg-offset-2">
-
-                <img id="logo" src="img/logo.svg" height=200px width=200px alt="logo Emmet" />
-              </div>
-            </div>
-        </div>
-        </div>
-          </div>
-        <!--    HEADER END      -->
-
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-          <!-- CONTENT-->
-          <div class="row">
-            <section id="synthaxe" class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
-              <h2 id="content"><i class="fa fa-keyboard-o fa-2x"></i>Synthaxe en Emmet</h2>
-              <p class="text-center">Emmet est un utilitaire de saisie de texte permettant de gagner du temps de saisie. apres avoir noté les raccourcis, il suffit d'appuyer sur <kbd>Tab</kbd> et hop! il fait le reste ...</p>
-              <img src="" alt="">
-            </section>
-            <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Cheat-sheet Emmet</a>
+          </div>
+          <div class="navbar-collapse  collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#synthaxe" class="btn btn-default" role="button">Synthaxe</a></li>
+              <li><a href="#html" class="btn btn-default" role="button">HTML</a></li>
+              <li><a href="#css" class="btn btn-default" role="button">CSS</a></li>
+              <li><a href="#about" class="btn btn-default" role="button">About</a></li>
+              <li><a href="#contact" class="btn btn-default" role="button">Contact</a></li>
+            </ul>
+          </div>
+          <!--/.navbar-collapse -->
+        </div>
+      </nav>
 
-                <h3>Inclure: &gt;</h3>
-                <ul>
-                <li>nav&gt;ul&gt;li<ul>
-                    <li>&lt;nav&gt;<ul>
-                        <li>&lt;ul&gt;<ul>
-                            <li>&lt;li&gt;&lt;/li&gt;</li>
-                        <li>&lt;/ul&gt;</li></ul></li>
-                    <li>&lt;/nav&gt;</li></ul></li></ul></li>
-                </ul>
-              </section>
-              <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
-                <h3>Ajouter: +</h3>
-                <ul>
-                <li>div+p+bq<ul>
-                    <li>&lt;div&gt;&lt;/div&gt;</li>
-                    <li>&lt;p&gt;&lt;/p&gt;</li>
-                    <li>&lt;blockquote&gt;&lt;/blockquote&gt;</li></ul></li>
-                </ul>
-              </section>
-              <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-2 col-lg-4 col-lg-offset-2">
 
-                <h3>A la ligne: ^</h3>
+          <img id="logo" src="img/logo.svg" height=200px width=200px alt="logo Emmet" />
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--    HEADER END      -->
+
+  <div class="container">
+    <!-- CONTENT-->
+    <div class="row">
+      <section id="synthaxe" class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
+        <h2 id="content"><i class="fa fa-keyboard-o fa-2x"></i>Synthaxe en Emmet</h2>
+        <p class="text-center">Emmet est un utilitaire de saisie de texte permettant de gagner du temps de saisie. apres avoir noté les raccourcis, il suffit d'appuyer sur
+          <kbd>Tab</kbd> et hop! il fait le reste ...</p>
+        <img src="" alt="">
+      </section>
+      <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
+
+        <h3>Inclure: &gt;</h3>
+        <code>
+          <ul>
+            <li>nav&gt;ul&gt;li
               <ul>
-                <li>div+div&gt;p&gt;span+em^bq<ul>
-                    <li>&lt;div&gt;&lt;/div&gt;</li>
-                    <li>&lt;div&gt;<ul>
-                        <li>&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;</li>
-                        <li>&lt;blockquote&gt;&lt;/blockquote&gt;</li></ul></li>
-                    <li>&lt;/div&gt;</li></ul></li>
-
-                <li>div+div&gt;p&gt;span+em^^bq<ul>
-                    <li>&lt;div&gt;&lt;/div&gt;</li>
-                    <li>&lt;div&gt;<ul>
-                        <li>&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;</li></ul></li>
-                    <li>&lt;/div&gt;</li>
-                    <li>&lt;blockquote&gt;&lt;/blockquote&gt;</li></ul></li>
-                </ul>
-              </section>
-              <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
-
-                <h3>Grouper: ()</h3>
-              <ul>
-                <li>div&gt;(header&gt;ul&gt;li*2&gt;a)+footer&gt;p<ul>
-                    <li>&lt;div&gt;<ul>
-                        <li>&lt;header&gt;<ul>
-                            <li>&lt;ul&gt;<ul>
-                                <li>&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;</li>
-                                <li>&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;</li></ul></li>
-                            <li>&lt;/ul&gt;</li></ul></li>
-                        <li>&lt;/header&gt;</li>
-                        <li>&lt;footer&gt;<ul>
-                            <li>&lt;p&gt;&lt;/p&gt;</li></ul></li>
-                        <li>&lt;/footer&gt;</li></ul></li>
-                    <li>&lt;/div&gt;</li></ul></li>
-
-                <li>(div&gt;dl&gt;(dt+dd)*3)+footer&gt;p<ul>
-                    <li>&lt;div&gt;<ul>
-                        <li>&lt;dl&gt;<ul>
-                            <li>&lt;dt&gt;&lt;/dt&gt;</li>
-                            <li>&lt;dd&gt;&lt;/dd&gt;</li>
-                            <li>&lt;dt&gt;&lt;/dt&gt;</li>
-                            <li>&lt;dd&gt;&lt;/dd&gt;</li>
-                            <li>&lt;dd&gt;&lt;/dd&gt;</li>
-                            <li>&lt;dt&gt;&lt;/dt&gt;</li></ul></li>
-                        <li>&lt;/dl&gt;</li></ul></li>
-                    <li>&lt;/div&gt;</li>
-                    <li>&lt;footer&gt;<ul>
-                        <li>&lt;p&gt;&lt;/p&gt;</li></ul>
-                    <li>&lt;/footer&gt;</li></ul></li>
+                <li>&lt;nav&gt;
+                  <ul>
+                    <li>&lt;ul&gt;
+                      <ul>
+                        <li>&lt;li&gt;&lt;/li&gt;</li>
+                        <li>&lt;/ul&gt;</li>
+                      </ul>
+                    </li>
+                    <li>&lt;/nav&gt;</li>
                   </ul>
-              </section>
-              <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
-
-                <h3>Multiplier: *</h3>
-              <ul>
-                <li>ul&gt;li*5<ul>
-                    <li>&lt;ul&gt;<ul>
-                        <li>&lt;li&gt;&lt;/li&gt;</li>
-                        <li>&lt;li&gt;&lt;/li&gt;</li>
-                        <li>&lt;li&gt;&lt;/li&gt;</li>
-                        <li>&lt;li&gt;&lt;/li&gt;</li>
-                        <li>&lt;li&gt;&lt;/li&gt;</li></ul></li>
-                    <li>&lt;/ul&gt;</li></ul></li>
-                </ul>
-              </section>
-              <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
-
-                <h3>Numeroter: $</h3>
-
-              <ul>
-                <li>ul&gt;li.item$*5<ul>
-                    <li>&lt;ul&gt;<ul>
-                        <li>&lt;li class="item1"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item2"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item3"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item4"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item5"&gt;&lt;/li&gt;</li></ul></li>
-                    <li>&lt;/ul&gt;</li></ul></li>
-
-                <li>h$[title=item$]{Header $}*3<ul>
-                    <li>&lt;h1 title="item1"&gt;Header 1&lt;/h1&gt;</li>
-                    <li>&lt;h2 title="item2"&gt;Header 2&lt;/h2&gt;</li>
-                    <li>&lt;h3 title="item3"&gt;Header 3&lt;/h3&gt;</li></ul></li>
-
-                <li>ul&gt;li.item$$$*5<ul>
-                    <li>&lt;ul&gt;<ul>
-                        <li>&lt;li class="item001"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item002"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item003"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item004"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item005"&gt;&lt;/li&gt;</li></ul></li>
-                    <li>&lt;/ul&gt;</li></ul></li>
-
-                <li>ul&gt;li.item$@-*5<ul>
-                    <li>&lt;ul&gt;<ul>
-                        <li>&lt;li class="item5"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item4"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item3"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item2"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item1"&gt;&lt;/li&gt;</li></ul></li>
-                    <li>&lt;/ul&gt;</li></ul></li>
-
-                <li>ul&gt;li.item$@3*5<ul>
-                    <li>&lt;ul&gt;<ul>
-                        <li>&lt;li class="item3"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item4"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item5"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item6"&gt;&lt;/li&gt;</li>
-                        <li>&lt;li class="item7"&gt;&lt;/li&gt;</li></ul></li>
-                    <li>&lt;/ul&gt;</li></ul></li>
-                </ul>
-
-              </section>
-              <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
-
-                <h3>ID, Classes et Tableau:</h3>
-
-              <ul>
-                <li>#toto<ul>
-                    <li>&lt;div id="toto"&gt;&lt;/div&gt;</li></ul></li>
-
-                <li>.title<ul>
-                    <li>&lt;div class="title"&gt;&lt;/div&gt;</li></ul></li>
-
-                <li>em&gt;.class<ul>
-                    <li>&lt;em&gt;&lt;span class="class"&gt;&lt;/span&gt;&lt;/em&gt;</li></ul></li>
-
-                <li>ul&gt;.class<ul>
-                    <li>&lt;ul&gt;<ul>
-                        <li>&lt;li class="class"&gt;&lt;/li&gt;</li></ul></li>
-                    <li>&lt;/ul&gt;</li></ul></li>
-
-                <li>form#search.wide<ul>
-                    <li>&lt;form id="search" class="wide"&gt;&lt;/form&gt;</li></ul></li>
-
-                <li>p.class1.class2.class3<ul>
-                    <li>&lt;p class="class1 class2 class3"&gt;&lt;/p&gt;</li></ul></li>
-
-                <li>table&gt;.row&gt;.col<ul>
-                    <li>&lt;table&gt;<ul>
-                        <li>&lt;tr class="row"&gt;<ul>
-                            <li>&lt;td class="col"&gt;&lt;/td&gt;</li></ul></li>
-                        <li>&lt;/tr&gt;</li></ul></li>
-                    <li>&lt;/table&gt;</li></ul></li>
-                </ul>
-
-              </section>
-              <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
-
-                <h3>Attributs personnalisés:</h3>
-
-              <ul>
-                <li>p[title="Hello world"]<ul>
-                  <li>&lt;p title="Hello world"&gt;&lt;/p&gt;</li></ul></li>
-
-                <li>td[rowspan=2 colspan=3 title]<ul>
-                    <li>&lt;td rowspan="2" colspan="3" title=""&gt;&lt;/td&gt;</li></ul></li>
-
-                <li>[a='value1' b="value2"]<ul>
-                    <li>&lt;div a="value1" b="value2"&gt;&lt;/div&gt;</li></ul></li>
-              </ul>
-                  </section>
-                  <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
-
-                <h3>Remplir entre les balises: {}</h3>
-                <ul>
-                <li>a{Click me}<ul>
-                    <li>&lt;a href=""&gt;Click me&lt;/a&gt;</li></ul></li>
-
-                <li>p&gt;{Click }+a{here}+{ to continue}<ul>
-                    <li>&lt;p&gt;Click &lt;a href=""&gt;here&lt;/a&gt; to continue&lt;/p&gt;</li></ul></li>
-
-                </ul>
-              </code>
-            </p>
-          </section>
-
-
-            <section class="col-lg-5 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
-              <h2 id="inhtml"><i class="fa fa-text-height fa-2x"></i>raccourcis HTML</h2>
-              <ul>
-              </ul>
-            </section>
-            <!--    SECTION HTML END      -->
-
-            <section class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
-              <h2 id="incss"><i class="fa fa-th fa-2x"></i>raccourcis CSS</h2>
-              <ul>
-                <li>
-
                 </li>
               </ul>
-            </section>
-            <!--    SECTION CSS END      -->
-
-            <section class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12">
-              <h2 id="about"><i class="fa fa-hand-spock-o fa-2x"></i>A propos</h2>
-              <p>Cheat-sheet du plugin EMMET réalisé lors de l'autoformation au sain du programme SIMPLON. Je fais partie de la 1ère promotion de l'essaimage de Roubaix</p>
-              <p>
-                <a href="http://simplon.co/roubaix">
-                  <img src="img/Logo-Roubaix.jpeg" alt="simplon roubaix" class="img-responsive">
-                </a>
-              </p>
-            </section>
-            <!--    ABOUT END      -->
-
-            <section class="col-lg-5 col-md-10 col-md-offset-1 col-sm-12">
-              <h2 id="contact"><i class="fa fa-envelope-o fa-2x"></i>Contact</h2>
-              <p>Des remarques? contactez-moi! </p>
-              <p>Fan? suivez-moi! </p>
-              <ul class="list-unstyled list-inline">
-                <li><a class="btn btn-default" href="mailto:maanier-guillaume@orange.fr" role="button"><i class="fa fa-envelope-o fa-lg"></i></a></li>
-                <li><a class="btn btn-default" href="http://github.com/GuillaumeM59" role="button"><i class="fa fa-github fa-lg"></i></a></li>
-                <li><a class="btn btn-default" href="#" role="button"><i class="fa fa-facebook-official fa-lg"></i></a></li>
-                <li><a class="btn btn-default" href="#" role="button"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+            </li>
+          </ul>
+        </code>
+      </section>
+      <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
+        <h3>Ajouter: +</h3>
+        <code>
+          <ul id="addlist">
+            <li>div+p+bq
+              <ul>
+                <li>&lt;div&gt;&lt;/div&gt;</li>
+                <li>&lt;p&gt;&lt;/p&gt;</li>
+                <li>&lt;blockquote&gt;&lt;/blockquote&gt;</li>
               </ul>
-            </section>
-            <!--    CONTACT END      -->
+            </li>
+          </ul>
+        </code>
+      </section>
+
+      <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
+
+        <h3>Multiplier: *</h3>
+        <code>
+          <ul>
+            <li>ul&gt;li*5
+              <ul>
+                <li>&lt;ul&gt;
+                  <ul>
+                    <li>&lt;li&gt;&lt;/li&gt;</li>
+                    <li>&lt;li&gt;&lt;/li&gt;</li>
+                    <li>&lt;li&gt;&lt;/li&gt;</li>
+                    <li>&lt;li&gt;&lt;/li&gt;</li>
+                    <li>&lt;li&gt;&lt;/li&gt;</li>
+                  </ul>
+                </li>
+                <li>&lt;/ul&gt;</li>
+              </ul>
+            </li>
+          </ul>
+        </code>
+      </section>
+      <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
+
+        <h3>A la ligne: ^</h3>
+        <code>
+          <ul>
+            <li>div+div&gt;p&gt;span+em^bq
+              <ul>
+                <li>&lt;div&gt;&lt;/div&gt;</li>
+                <li>&lt;div&gt;
+                  <ul>
+                    <li>&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;</li>
+                    <li>&lt;blockquote&gt;&lt;/blockquote&gt;</li>
+                  </ul>
+                </li>
+                <li>&lt;/div&gt;</li>
+              </ul>
+            </li>
+
+            <li>div+div&gt;p&gt;span+em^^bq
+              <ul>
+                <li>&lt;div&gt;&lt;/div&gt;</li>
+                <li>&lt;div&gt;
+                  <ul>
+                    <li>&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;</li>
+                  </ul>
+                </li>
+                <li>&lt;/div&gt;</li>
+                <li>&lt;blockquote&gt;&lt;/blockquote&gt;</li>
+              </ul>
+            </li>
+          </ul>
+        </code>
+      </section>
+
+      <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
+
+        <h3>Numeroter: $</h3>
+
+        <code>
+          <ul>
+            <li>ul&gt;li.item$*5
+              <ul>
+                <li>&lt;ul&gt;
+                  <ul>
+                    <li>&lt;li class="item1"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item2"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item3"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item4"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item5"&gt;&lt;/li&gt;</li>
+                  </ul>
+                </li>
+                <li>&lt;/ul&gt;</li>
+              </ul>
+            </li>
+
+            <li>h$[title=item$]{Header $}*3
+              <ul>
+                <li>&lt;h1 title="item1"&gt;Header 1&lt;/h1&gt;</li>
+                <li>&lt;h2 title="item2"&gt;Header 2&lt;/h2&gt;</li>
+                <li>&lt;h3 title="item3"&gt;Header 3&lt;/h3&gt;</li>
+              </ul>
+            </li>
+
+            <li>ul&gt;li.item$$$*5
+              <ul>
+                <li>&lt;ul&gt;
+                  <ul>
+                    <li>&lt;li class="item001"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item002"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item003"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item004"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item005"&gt;&lt;/li&gt;</li>
+                  </ul>
+                </li>
+                <li>&lt;/ul&gt;</li>
+              </ul>
+            </li>
+
+            <li>ul&gt;li.item$@-*5
+              <ul>
+                <li>&lt;ul&gt;
+                  <ul>
+                    <li>&lt;li class="item5"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item4"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item3"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item2"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item1"&gt;&lt;/li&gt;</li>
+                  </ul>
+                </li>
+                <li>&lt;/ul&gt;</li>
+              </ul>
+            </li>
+
+            <li>ul&gt;li.item$@3*5
+              <ul>
+                <li>&lt;ul&gt;
+                  <ul>
+                    <li>&lt;li class="item3"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item4"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item5"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item6"&gt;&lt;/li&gt;</li>
+                    <li>&lt;li class="item7"&gt;&lt;/li&gt;</li>
+                  </ul>
+                </li>
+                <li>&lt;/ul&gt;</li>
+              </ul>
+            </li>
+          </ul>
+        </code>
+
+      </section>
+
+
+
+      <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
+
+        <h3>Grouper: ()</h3>
+        <code>
+          <ul>
+            <li>div&gt;(header&gt;ul&gt;li*2&gt;a)+footer&gt;p
+              <ul>
+                <li>&lt;div&gt;
+                  <ul>
+                    <li>&lt;header&gt;
+                      <ul>
+                        <li>&lt;ul&gt;
+                          <ul>
+                            <li>&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;</li>
+                            <li>&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;</li>
+                          </ul>
+                        </li>
+                        <li>&lt;/ul&gt;</li>
+                      </ul>
+                    </li>
+                    <li>&lt;/header&gt;</li>
+                    <li>&lt;footer&gt;
+                      <ul>
+                        <li>&lt;p&gt;&lt;/p&gt;</li>
+                      </ul>
+                    </li>
+                    <li>&lt;/footer&gt;</li>
+                  </ul>
+                </li>
+                <li>&lt;/div&gt;</li>
+              </ul>
+            </li>
+
+            <li>(div&gt;dl&gt;(dt+dd)*3)+footer&gt;p
+              <ul>
+                <li>&lt;div&gt;
+                  <ul>
+                    <li>&lt;dl&gt;
+                      <ul>
+                        <li>&lt;dt&gt;&lt;/dt&gt;</li>
+                        <li>&lt;dd&gt;&lt;/dd&gt;</li>
+                        <li>&lt;dt&gt;&lt;/dt&gt;</li>
+                        <li>&lt;dd&gt;&lt;/dd&gt;</li>
+                        <li>&lt;dd&gt;&lt;/dd&gt;</li>
+                        <li>&lt;dt&gt;&lt;/dt&gt;</li>
+                      </ul>
+                    </li>
+                    <li>&lt;/dl&gt;</li>
+                  </ul>
+                </li>
+                <li>&lt;/div&gt;</li>
+                <li>&lt;footer&gt;
+                  <ul>
+                    <li>&lt;p&gt;&lt;/p&gt;</li>
+                  </ul>
+                  <li>&lt;/footer&gt;</li>
+              </ul>
+              </li>
+          </ul>
+        </code>
+      </section>
+
+      <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
+
+        <h3>Remplir entre les balises: {}</h3>
+        <code>
+          <ul>
+            <li>a{Click me}
+              <ul>
+                <li>&lt;a href=""&gt;Click me&lt;/a&gt;</li>
+              </ul>
+            </li>
+
+            <li>p&gt;{Click }+a{here}+{ to continue}
+              <ul>
+                <li>&lt;p&gt;Click &lt;a href=""&gt;here&lt;/a&gt; to continue&lt;/p&gt;</li>
+              </ul>
+            </li>
+          </ul>
+        </code>
+      </section>
+
+
+      <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
+
+        <h3>ID, Classes et Tableau:</h3>
+
+        <code>
+          <ul>
+            <li>#toto
+              <ul>
+                <li>&lt;div id="toto"&gt;&lt;/div&gt;</li>
+              </ul>
+            </li>
+
+            <li>.title
+              <ul>
+                <li>&lt;div class="title"&gt;&lt;/div&gt;</li>
+              </ul>
+            </li>
+
+            <li>em&gt;.class
+              <ul>
+                <li>&lt;em&gt;&lt;span class="class"&gt;&lt;/span&gt;&lt;/em&gt;</li>
+              </ul>
+            </li>
+
+            <li>ul&gt;.class
+              <ul>
+                <li>&lt;ul&gt;
+                  <ul>
+                    <li>&lt;li class="class"&gt;&lt;/li&gt;</li>
+                  </ul>
+                </li>
+                <li>&lt;/ul&gt;</li>
+              </ul>
+            </li>
+
+            <li>form#search.wide
+              <ul>
+                <li>&lt;form id="search" class="wide"&gt;&lt;/form&gt;</li>
+              </ul>
+            </li>
+
+            <li>p.class1.class2.class3
+              <ul>
+                <li>&lt;p class="class1 class2 class3"&gt;&lt;/p&gt;</li>
+              </ul>
+            </li>
+
+            <li>table&gt;.row&gt;.col
+              <ul>
+                <li>&lt;table&gt;
+                  <ul>
+                    <li>&lt;tr class="row"&gt;
+                      <ul>
+                        <li>&lt;td class="col"&gt;&lt;/td&gt;</li>
+                      </ul>
+                    </li>
+                    <li>&lt;/tr&gt;</li>
+                  </ul>
+                </li>
+                <li>&lt;/table&gt;</li>
+              </ul>
+            </li>
+          </ul>
+        </code>
+
+      </section>
+      <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
+
+        <h3>Attributs personnalisés:</h3>
+
+        <code>
+          <ul>
+            <li>p[title="Hello world"]
+              <ul>
+                <li>&lt;p title="Hello world"&gt;&lt;/p&gt;</li>
+              </ul>
+            </li>
+
+            <li>td[rowspan=2 colspan=3 title]
+              <ul>
+                <li>&lt;td rowspan="2" colspan="3" title=""&gt;&lt;/td&gt;</li>
+              </ul>
+            </li>
+
+            <li>[a='value1' b="value2"]
+              <ul>
+                <li>&lt;div a="value1" b="value2"&gt;&lt;/div&gt;</li>
+              </ul>
+            </li>
+          </ul>
+        </code>
+      </section>
+    </div>
+
+    <div class="row">
+
+      <section class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12">
+        <h2 id="html"><i class="fa fa-text-height fa-2x"></i>raccourcis HTML</h2>
+        <div class="row">
+          <div class="col_lg-6 col-md-6 col-sm-12">
+            <code>
+              <ul>
+                <li>!
+                  <ul>
+                    <li>&lt;!DOCTYPE html&gt;</li>
+                    <li>&lt;html lang="en"&gt;</li>
+                    <li>&lt;head&gt;
+                      <ul>
+                        <li>&lt;meta charset="UTF-8" /&gt;</li>
+                        <li>&lt;title&gt;Document&lt;/title&gt;</li>
+                      </ul>
+                    </li>
+                    <li>&lt;/head&gt;</li>
+                    <li>&lt;body&gt;</li>
+                    <li></li>
+                    <li>&lt;/body&gt;</li>
+                    <li>&lt;/html&gt;</li>
+                  </ul>
+                </li>
+
+                <li>a
+                  <ul>
+                    <li>&lt;a href=""&gt;&lt;/a&gt;</li>
+                  </ul>
+                </li>
+
+                <li>a:link
+                  <ul>
+                    <li>&lt;a href="http://"&gt;&lt;/a&gt;</li>
+                  </ul>
+                </li>
+
+                <li>a:mail
+                  <ul>
+                    <li>&lt;a href="mailto:"&gt;&lt;/a&gt;</li>
+                  </ul>
+                </li>
+
+                <li>br
+                  <ul>
+                    <li>&lt;br /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>link
+                  <ul>
+                    <li>&lt;link rel="stylesheet" href="" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>link:css
+                  <ul>
+                    <li>&lt;link rel="stylesheet" href="style.css" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>link:favicon
+                  <ul>
+                    <li>&lt;link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>script
+                  <ul>
+                    <li>&lt;script&gt;&lt;/script&gt;</li>
+                  </ul>
+                </li>
+
+                <li>img
+                  <ul>
+                    <li>&lt;img src="" alt="" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>form
+                  <ul>
+                    <li>&lt;form action=""&gt;&lt;/form&gt;</li>
+                  </ul>
+                </li>
+
+                <li>label
+                  <ul>
+                    <li>&lt;label for=""&gt;&lt;/label&gt;</li>
+                  </ul>
+                </li>
+
+                <li>input
+                  <ul>
+                    <li>&lt;input type="text" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>inp
+                  <ul>
+                    <li>&lt;input type="text" name="" id="" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>input:search
+                  <ul>
+                    <li>&lt;input type="search" name="" id="" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>input:email
+                  <ul>
+                    <li>&lt;input type="email" name="" id="" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>input:p
+                  <ul>
+                    <li>&lt;input type="password" name="" id="" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>input:date
+                  <ul>
+                    <li>&lt;input type="date" name="" id="" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>input:tel
+                  <ul>
+                    <li>&lt;input type="tel" name="" id="" /&gt;</li>
+                  </ul>
+                </li>
+              </ul>
+            </code>
           </div>
-          <!-- END CONTAINER -->
-          <hr>
+          <div class="col_lg-6 col-md-6 col-sm-12">
+            <code>
+              <ul>
+                <li>input:number
+                  <ul>
+                    <li>&lt;input type="number" name="" id="" /&gt;</li>
+                  </ul>
+                </li>
 
-          <footer class="text-center">
-            <p>&copy; Free to copy: Open source Project made by GuillaumeM59</p>
-          </footer>
+                <li>input:c
+                  <ul>
+                    <li>&lt;input type="checkbox" name="" id="" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>input:r
+                  <ul>
+                    <li>&lt;input type="radio" name="" id="" /&gt;</li>
+                  </ul>
+                </li>
+
+                <li>opt
+                  <ul>
+                    <li>&lt;option value=""&gt;&lt;/option&gt;</li>
+                  </ul>
+                </li>
+
+                <li>video
+                  <ul>
+                    <li>&lt;video src=""&gt;&lt;/video&gt;</li>
+                  </ul>
+                </li>
+
+                <li>audio
+                  <ul>
+                    <li>&lt;audio src=""&gt;&lt;/audio&gt;</li>
+                  </ul>
+                </li>
+
+                <li>btn
+                  <ul>
+                    <li>&lt;button&gt;&lt;/button&gt;</li>
+                  </ul>
+                </li>
+
+                <li>btn:s
+                  <ul>
+                    <li>&lt;button type="submit"&gt;&lt;/button&gt;</li>
+                  </ul>
+                </li>
+
+                <li>sect
+                  <ul>
+                    <li>&lt;section&gt;&lt;/section&gt;</li>
+                  </ul>
+                </li>
+
+                <li>art
+                  <ul>
+                    <li>&lt;article&gt;&lt;/article&gt;</li>
+                  </ul>
+                </li>
+
+                <li>hdr
+                  <ul>
+                    <li>&lt;header&gt;&lt;/header&gt;</li>
+                  </ul>
+                </li>
+
+                <li>ftr
+                  <ul>
+                    <li>&lt;footer&gt;&lt;/footer&gt;</li>
+                  </ul>
+                </li>
+
+                <li>str
+                  <ul>
+                    <li>&lt;strong&gt;&lt;/strong&gt;</li>
+                  </ul>
+                </li>
+
+                <li>ol+
+                  <ul>
+                    <li>&lt;ol&gt;
+                      <ul>
+                        <li>&lt;li&gt;&lt;/li&gt;</li>
+                      </ul>
+                    </li>
+                    <li>&lt;/ol&gt;</li>
+                  </ul>
+                </li>
+
+                <li>ul+
+                  <ul>
+                    <li>&lt;ul&gt;
+                      <ul>
+                        <li>&lt;li&gt;&lt;/li&gt;</li>
+                      </ul>
+                    </li>
+                    <li>&lt;/ul&gt;</li>
+                  </ul>
+                </li>
+
+                <li>table+
+                  <ul>
+                    <li>&lt;table&gt;
+                      <ul>
+                        <li>&lt;tr&gt;
+                          <ul>
+                            <li>&lt;td&gt;&lt;/td&gt;</li>
+                          </ul>
+                        </li>
+                        <li>&lt;/tr&gt;</li>
+                      </ul>
+                    </li>
+                    <li>&lt;/table&gt;</li>
+                  </ul>
+                </li>
+
+                <li>tr+
+                  <ul>
+                    <li>&lt;tr&gt;
+                      <ul>
+                        <li>&lt;td&gt;&lt;/td&gt;</li>
+                      </ul>
+                    </li>
+                    <li>&lt;/tr&gt;</li>
+                  </ul>
+                </li>
+
+                <li>optg+
+                  <ul>
+                    <li>&lt;optgroup&gt;
+                      <ul>
+                        <li>&lt;option value=""&gt;&lt;/option&gt;</li>
+                      </ul>
+                    </li>
+                    <li>&lt;/optgroup&gt;</li>
+                  </ul>
+                </li>
+              </ul>
+            </code>
+          </div>
         </div>
-        <!-- /container -->
+      </section>
+    </div>
+    <!--    SECTION HTML END      -->
+    <div class="row">
+
+      <section class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
+        <h2 id="css"><i class="fa fa-th fa-2x"></i>raccourcis CSS</h2>
+        <ul>
+          <li>
+
+
+            pos
+                position:relative;
+
+            pos:s
+                position:static;
+
+            pos:a
+                position:absolute;
+
+            pos:r
+                position:relative;
+
+            pos:f
+                position:fixed;
+
+            t
+                top:;
+
+            r
+                right:;
+
+            b
+                bottom:;
+
+            l
+                left:;
+
+            z
+                z-index:;
+
+            fl:n
+                float:none;
+
+            fl:l
+                float:left;
+
+            fl:r
+                float:right;
+
+            cl
+                clear:both;
+
+            cl:l
+                clear:left;
+
+            cl:r
+                clear:right;
+
+            d:n
+                display:none;
+
+            d:b
+                display:block;
+
+            d:i
+                display:inline;
+
+            d:ib
+                display:inline-block;
+
+            ov
+                overflow:hidden;
+
+            ovx
+                overflow-x:hidden;
+
+            ovy
+                overflow-y:hidden;
+
+            m
+                margin:;
+
+            m:a
+                margin:auto;
+
+            mt
+                margin-top:;
+
+            mr
+                margin-right:;
+
+            mb
+                margin-bottom:;
+
+            ml
+                margin-left:;
+
+            p
+                padding:;
+
+            pt
+                padding-top:;
+
+            pr
+                padding-right:;
+
+            pb
+                padding-bottom:;
+
+            pl
+                padding-left:;
+
+            w
+                width:;
+
+            w:a
+                width:auto;
+
+            h
+                height:;
+
+            h:a
+                height:auto;
+
+            maw
+                max-width:;
+
+            mah
+                max-height:;
+
+            miw
+                min-width:;
+
+            mih
+                min-height:;
+
+            fw
+                font-weight:;
+
+            fw:b
+                font-weight:bold;
+
+            fs:i
+                font-style:italic;
+
+            fz
+                font-size:;
+
+            ff
+                font-family:;
+
+            va:t
+                vertical-align:top;
+
+            va:m
+                vertical-align:middle;
+
+            va:b
+                vertical-align:bottom;
+
+            ta
+                text-align:left;
+
+            ta:l
+                text-align:left;
+
+            ta:c
+                text-align:center;
+
+            ta:r
+                text-align:right;
+
+            ta:j
+                text-align:justify;
+
+            td
+                text-decoration:none;
+
+            tt
+                text-transform:uppercase;
+
+            tt:c
+                text-transform:capitalize;
+
+            bgc
+                background-color:#fff;
+
+            bgc:t
+                background-color:transparent;
+
+            bgi
+                background-image:url();
+
+            bgi:n
+                background-image:none;
+
+            bgr
+                background-repeat:;
+
+            bgr:n
+                background-repeat:no-repeat;
+
+            bgp
+                background-position:0 0;
+
+            bgsz
+                background-size:;
+
+            bgsz:cv
+                background-size:cover;
+
+            c
+                color:#000;
+
+            c:r
+                color:rgb(0, 0, 0);
+
+            c:ra
+                color:rgba(0, 0, 0, .5);
+
+            bd
+                border:;
+
+            bdt
+                border-top:;
+
+            bdr
+                border-right:;
+
+            bdb
+                border-bottom:;
+
+            bdl
+                border-left:;
+
+            bdrs
+                border-radius:;
+
+            lis:n
+                list-style:none;
+
+            !
+                !important
+
+            @f
+                @font-face {
+                    font-family:;
+                    src:url(|);
+                }
+
+            @m
+                @media screen {
+
+                }
+
+
+          </li>
+        </ul>
+      </section>
+    </div>
+    <!--    SECTION CSS END      -->
+
+    <section class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12">
+      <h2 id="about"><i class="fa fa-hand-spock-o fa-2x"></i>A propos</h2>
+      <p>Cheat-sheet du plugin EMMET réalisé lors de l'autoformation au sain du programme SIMPLON. Je fais partie de la 1ère promotion de l'essaimage de Roubaix</p>
+      <p>
+        <a href="http://simplon.co/roubaix">
+          <img src="img/Logo-Roubaix.jpeg" alt="simplon roubaix" class="img-responsive">
+        </a>
+      </p>
+    </section>
+    <!--    ABOUT END      -->
+
+    <section class="col-lg-5 col-md-10 col-md-offset-1 col-sm-12">
+      <h2 id="contact"><i class="fa fa-envelope-o fa-2x"></i>Contact</h2>
+      <p>Des remarques? contactez-moi! </p>
+      <p>Fan? suivez-moi! </p>
+      <ul class="list-unstyled list-inline">
+        <li><a class="btn btn-default" href="mailto:maanier-guillaume@orange.fr" role="button"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+        <li><a class="btn btn-default" href="http://github.com/GuillaumeM59" role="button"><i class="fa fa-github fa-lg"></i></a></li>
+        <li><a class="btn btn-default" href="#" role="button"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+        <li><a class="btn btn-default" href="#" role="button"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+      </ul>
+    </section>
+    <!--    CONTACT END      -->
+  </div>
+  <!-- END CONTAINER -->
+  <hr>
+
+  <footer class="text-center">
+    <p>&copy; Free to copy: Open source Project made by GuillaumeM59</p>
+  </footer>
+  </div>
+  <!-- /container -->
 
 
 
-         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')
+  </script>
 
 
-        <script src="js/plugins.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
 </html>
