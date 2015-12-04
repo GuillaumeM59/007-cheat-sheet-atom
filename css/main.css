@@ -4,16 +4,55 @@
    Author's custom styles
    ========================================================================== */
 
+/*color:#7acb16 //vert vif*/
+/*color:#baffa9 //vert pastel*/
+/*color:#1c1c20 //bg gris*/
+
 
 body {padding-top: 50px;}
 
 h2{
-text-align: center; 
+text-align: center;
+padding-top: 50px;
 }
 
 h3 { font-weight: 600;}
 
+.nav > li > a{
+  color: none;
+  padding: 0;
+}
+.nav > li{
+  display: inline-block;
+}
+
 ul, ul li, ul li ul, ul li ul li {list-style-type: none;}
+
+ul code {
+  background-color: #1c1c20;
+  color: #7acb16;
+  padding: 10px 10px;
+  font-weight: 600;
+}
+ul code li ul {
+  color: #baffa9;
+  font-weight: 500;
+}
+
+.btn-nav-perso {
+  font-weight: 500;
+  color: #baffa9;
+  border: 1px solid #7acb16;
+  border-radius: 10px;
+  padding: 5px 5px !important;
+  margin-left: 5px!important;
+  margin-top: 9px !important;
+}
+.navbar-brand {
+  color: #baffa9!important;
+  font-weight: 500!important;
+}
+
 
 #home {
   background-image: url("../img/header.jpg");

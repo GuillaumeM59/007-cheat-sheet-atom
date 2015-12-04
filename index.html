@@ -11,13 +11,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Cheat-sheet Emmet</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <!--stylesheets-->
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic" rel="stylesheet" type="text/css">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+  <!--<meta name="viewport" content="width=device-width" />-->
+
 </head>
 
 <body>
@@ -45,12 +53,12 @@
             <a class="navbar-brand" href="#">Cheat-sheet Emmet</a>
           </div>
           <div class="navbar-collapse  collapse" id="navbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#synthaxe" class="btn btn-default" role="button">Synthaxe</a></li>
-              <li><a href="#html" class="btn btn-default" role="button">HTML</a></li>
-              <li><a href="#css" class="btn btn-default" role="button">CSS</a></li>
-              <li><a href="#about" class="btn btn-default" role="button">About</a></li>
-              <li><a href="#contact" class="btn btn-default" role="button">Contact</a></li>
+            <ul class="nav navbar-right">
+              <li><a href="#synthaxe" class="btn btn-nav-perso" role="button">Synthaxe</a></li>
+              <li><a href="#html" class="btn btn-nav-perso" role="button">HTML</a></li>
+              <li><a href="#css" class="btn btn-nav-perso" role="button">CSS</a></li>
+              <li><a href="#about" class="btn btn-nav-perso" role="button">About</a></li>
+              <li><a href="#contact" class="btn btn-nav-perso" role="button">Contact</a></li>
             </ul>
           </div>
           <!--/.navbar-collapse -->
@@ -60,11 +68,10 @@
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-2 col-lg-4 col-lg-offset-2">
 
-          <img id="logo" src="img/logo.svg" height=200px width=200px alt="logo Emmet" />
+          <img id="logo" src="img/logo.svg" height=200 width=200 alt="logo Emmet" />
         </div>
       </div>
     </div>
-  </div>
   </div>
   <!--    HEADER END      -->
 
@@ -72,17 +79,15 @@
     <!-- CONTENT-->
     <div class="row">
       <section id="synthaxe" class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
-        <h2 id="content"><i class="fa fa-keyboard-o fa-2x"></i>Synthaxe en Emmet</h2>
+        <h2 id="content"><i class="fa fa-keyboard-o fa-2x"></i> Synthaxe en Emmet</h2>
         <p class="text-center">Emmet est un utilitaire de saisie de texte permettant de gagner du temps de saisie. apres avoir noté les raccourcis, il suffit d'appuyer sur
           <kbd>Tab</kbd> et hop! il fait le reste ...</p>
-        <img src="" alt="">
       </section>
       <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
 
         <h3>Inclure: &gt;</h3>
-        <code>
-          <ul>
-            <li>nav&gt;ul&gt;li
+        <ul>
+          <li>nav&gt;ul&gt;li
               <ul>
                 <li>&lt;nav&gt;
                   <ul>
@@ -97,12 +102,10 @@
                 </li>
               </ul>
             </li>
-          </ul>
-        </code>
+            </ul>
       </section>
       <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
         <h3>Ajouter: +</h3>
-        <code>
           <ul id="addlist">
             <li>div+p+bq
               <ul>
@@ -111,14 +114,12 @@
                 <li>&lt;blockquote&gt;&lt;/blockquote&gt;</li>
               </ul>
             </li>
-          </ul>
-        </code>
+              </ul>
       </section>
 
       <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
 
         <h3>Multiplier: *</h3>
-        <code>
           <ul>
             <li>ul&gt;li*5
               <ul>
@@ -134,13 +135,11 @@
                 <li>&lt;/ul&gt;</li>
               </ul>
             </li>
-          </ul>
-        </code>
+                </ul>
       </section>
       <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
 
         <h3>A la ligne: ^</h3>
-        <code>
           <ul>
             <li>div+div&gt;p&gt;span+em^bq
               <ul>
@@ -167,15 +166,13 @@
                 <li>&lt;blockquote&gt;&lt;/blockquote&gt;</li>
               </ul>
             </li>
-          </ul>
-        </code>
+              </ul>
       </section>
 
       <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
 
         <h3>Numeroter: $</h3>
 
-        <code>
           <ul>
             <li>ul&gt;li.item$*5
               <ul>
@@ -244,8 +241,7 @@
                 <li>&lt;/ul&gt;</li>
               </ul>
             </li>
-          </ul>
-        </code>
+                </ul>
 
       </section>
 
@@ -254,7 +250,6 @@
       <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
 
         <h3>Grouper: ()</h3>
-        <code>
           <ul>
             <li>div&gt;(header&gt;ul&gt;li*2&gt;a)+footer&gt;p
               <ul>
@@ -309,15 +304,13 @@
                   <li>&lt;/footer&gt;</li>
               </ul>
               </li>
-          </ul>
-        </code>
+              </ul>
       </section>
 
       <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
 
         <h3>Remplir entre les balises: {}</h3>
-        <code>
-          <ul>
+        <ul>
             <li>a{Click me}
               <ul>
                 <li>&lt;a href=""&gt;Click me&lt;/a&gt;</li>
@@ -329,8 +322,7 @@
                 <li>&lt;p&gt;Click &lt;a href=""&gt;here&lt;/a&gt; to continue&lt;/p&gt;</li>
               </ul>
             </li>
-          </ul>
-        </code>
+                </ul>
       </section>
 
 
@@ -338,7 +330,6 @@
 
         <h3>ID, Classes et Tableau:</h3>
 
-        <code>
           <ul>
             <li>#toto
               <ul>
@@ -396,16 +387,14 @@
                 <li>&lt;/table&gt;</li>
               </ul>
             </li>
-          </ul>
-        </code>
+                </ul>
 
       </section>
       <section class="col-lg-4 col-md-5 col-md-offset-1 col-sm-12">
 
         <h3>Attributs personnalisés:</h3>
 
-        <code>
-          <ul>
+        <ul>
             <li>p[title="Hello world"]
               <ul>
                 <li>&lt;p title="Hello world"&gt;&lt;/p&gt;</li>
@@ -423,18 +412,17 @@
                 <li>&lt;div a="value1" b="value2"&gt;&lt;/div&gt;</li>
               </ul>
             </li>
-          </ul>
-        </code>
+              </ul>
       </section>
     </div>
 
     <div class="row">
 
       <section class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12">
-        <h2 id="html"><i class="fa fa-text-height fa-2x"></i>raccourcis HTML</h2>
+        <h2 id="html"><i class="fa fa-html5 fa-2x"></i> Raccourcis HTML</h2>
         <div class="row">
           <div class="col_lg-6 col-md-6 col-sm-12">
-            <code>
+
               <ul>
                 <li>!
                   <ul>
@@ -561,12 +549,11 @@
                     <li>&lt;input type="tel" name="" id="" /&gt;</li>
                   </ul>
                 </li>
-              </ul>
-            </code>
+                    </ul>
+
           </div>
           <div class="col_lg-6 col-md-6 col-sm-12">
-            <code>
-              <ul>
+          <ul>
                 <li>input:number
                   <ul>
                     <li>&lt;input type="number" name="" id="" /&gt;</li>
@@ -705,7 +692,6 @@
                   </ul>
                 </li>
               </ul>
-            </code>
           </div>
         </div>
       </section>
@@ -713,260 +699,258 @@
     <!--    SECTION HTML END      -->
     <div class="row">
 
-      <section class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
-        <h2 id="css"><i class="fa fa-th fa-2x"></i>raccourcis CSS</h2>
+      <section class="col-lg-12 col-md-12 col-sm-12">
+        <h2 id="css"><i class="fa fa-css3 fa-2x"></i> Raccourcis CSS</h2>
+        <div class="col-lg-5 col-lg-offset-1">
         <ul>
-          <li>
+          <li>pos<ul>
+                <li>position:relative;</li></ul></li>
 
+            <li>pos:s<ul>
+                <li>position:static;</li></ul></li>
 
-            pos
-                position:relative;
+            <li>pos:a<ul>
+                <li>position:absolute;</li></ul></li>
 
-            pos:s
-                position:static;
+            <li>pos:r<ul>
+                <li>position:relative;</li></ul></li>
 
-            pos:a
-                position:absolute;
+            <li>pos:f<ul>
+                <li>position:fixed;</li></ul></li>
 
-            pos:r
-                position:relative;
+            <li>t<ul>
+                <li>top:;</li></ul></li>
 
-            pos:f
-                position:fixed;
+            <li>r<ul>
+                <li>right:;</li></ul></li>
 
-            t
-                top:;
+            <li>b<ul>
+                <li>bottom:;</li></ul></li>
 
-            r
-                right:;
+            <li>l<ul>
+                <li>left:;</li></ul></li>
 
-            b
-                bottom:;
+            <li>z<ul>
+                <li>z-index:;</li></ul></li>
 
-            l
-                left:;
+            <li>fl:n<ul>
+                <li>float:none;</li></ul></li>
 
-            z
-                z-index:;
+            <li>fl:l<ul>
+                <li>float:left;</li></ul></li>
 
-            fl:n
-                float:none;
+            <li>fl:r<ul>
+                <li>float:right;</li></ul></li>
 
-            fl:l
-                float:left;
+            <li>cl<ul>
+                <li>clear:both;</li></ul></li>
 
-            fl:r
-                float:right;
+            <li>cl:l<ul>
+                <li>clear:left;</li></ul></li>
 
-            cl
-                clear:both;
+            <li>cl:r<ul>
+                <li>clear:right;</li></ul></li>
 
-            cl:l
-                clear:left;
+            <li>d:n<ul>
+                <li>display:none;</li></ul></li>
 
-            cl:r
-                clear:right;
+            <li>d:b<ul>
+                <li>display:block;</li></ul></li>
 
-            d:n
-                display:none;
+            <li>d:i<ul>
+                <li>display:inline;</li></ul></li>
 
-            d:b
-                display:block;
+            <li>d:ib<ul>
+                <li>display:inline-block;</li></ul></li>
 
-            d:i
-                display:inline;
+            <li>ov<ul>
+                <li>overflow:hidden;</li></ul></li>
 
-            d:ib
-                display:inline-block;
+            <li>ovx<ul>
+                <li>overflow-x:hidden;</li></ul></li>
 
-            ov
-                overflow:hidden;
+            <li>ovy<ul>
+                <li>overflow-y:hidden;</li></ul></li>
 
-            ovx
-                overflow-x:hidden;
+            <li>m<ul>
+                <li>margin:;</li></ul></li>
 
-            ovy
-                overflow-y:hidden;
+            <li>m:a<ul>
+                <li>margin:auto;</li></ul></li>
 
-            m
-                margin:;
+            <li>mt<ul>
+                <li>margin-top:;</li></ul></li>
 
-            m:a
-                margin:auto;
+            <li>mr<ul>
+                <li>margin-right:;</li></ul></li>
 
-            mt
-                margin-top:;
+            <li>mb<ul>
+                <li>margin-bottom:;</li></ul></li>
 
-            mr
-                margin-right:;
+            <li>ml<ul>
+                <li>margin-left:;</li></ul></li>
 
-            mb
-                margin-bottom:;
+            <li>p<ul>
+                <li>padding:;</li></ul></li>
 
-            ml
-                margin-left:;
+            <li>pt<ul>
+                <li>padding-top:;</li></ul></li>
 
-            p
-                padding:;
+            <li>pr<ul>
+                <li>padding-right:;</li></ul></li>
 
-            pt
-                padding-top:;
+            <li>pb<ul>
+                <li>padding-bottom:;</li></ul></li>
 
-            pr
-                padding-right:;
+            <li>pl<ul>
+                <li>padding-left:;</li></ul></li>
 
-            pb
-                padding-bottom:;
+            <li>w<ul>
+                <li>width:;</li></ul></li>
 
-            pl
-                padding-left:;
+            <li>w:a<ul>
+                <li>width:auto;</li></ul></li>
 
-            w
-                width:;
+            <li>h<ul>
+                <li>height:;</li></ul></li>
 
-            w:a
-                width:auto;
+            <li>h:a<ul>
+                <li>height:auto;</li></ul></li>
 
-            h
-                height:;
+            <li>maw<ul>
+                <li>max-width:;</li></ul></li>
 
-            h:a
-                height:auto;
+            <li>mah<ul>
+                <li>max-height:;</li></ul></li>
+          </ul>
+          </div>
 
-            maw
-                max-width:;
+          <div class="col-lg-5 col-lg-offset-1">
+        <ul>
+            <li>miw<ul>
+                <li>min-width:;</li></ul></li>
 
-            mah
-                max-height:;
+            <li>mih<ul>
+                <li>min-height:;</li></ul></li>
 
-            miw
-                min-width:;
+            <li>fw<ul>
+                <li>font-weight:;</li></ul></li>
 
-            mih
-                min-height:;
+            <li>fw:b<ul>
+                <li>font-weight:bold;</li></ul></li>
 
-            fw
-                font-weight:;
+            <li>fs:i<ul>
+                <li>font-style:italic;</li></ul></li>
 
-            fw:b
-                font-weight:bold;
+            <li>fz<ul>
+                <li>font-size:;</li></ul></li>
 
-            fs:i
-                font-style:italic;
+            <li>ff<ul>
+                <li>font-family:;</li></ul></li>
 
-            fz
-                font-size:;
+            <li>va:t<ul>
+                <li>vertical-align:top;</li></ul></li>
 
-            ff
-                font-family:;
+            <li>va:m<ul>
+                <li>vertical-align:middle;</li></ul></li>
 
-            va:t
-                vertical-align:top;
+            <li>va:b<ul>
+                <li>vertical-align:bottom;</li></ul></li>
 
-            va:m
-                vertical-align:middle;
+            <li>ta<ul>
+                <li>text-align:left;</li></ul></li>
 
-            va:b
-                vertical-align:bottom;
+            <li>ta:l<ul>
+                <li>text-align:left;</li></ul></li>
 
-            ta
-                text-align:left;
+            <li>ta:c<ul>
+                <li>text-align:center;</li></ul></li>
 
-            ta:l
-                text-align:left;
+            <li>ta:r<ul>
+                <li>text-align:right;</li></ul></li>
 
-            ta:c
-                text-align:center;
+            <li>ta:j<ul>
+                <li>text-align:justify;</li></ul></li>
 
-            ta:r
-                text-align:right;
+            <li>td<ul>
+                <li>text-decoration:none;</li></ul></li>
 
-            ta:j
-                text-align:justify;
+            <li>tt<ul>
+                <li>text-transform:uppercase;</li></ul></li>
 
-            td
-                text-decoration:none;
+            <li>tt:c<ul>
+                <li>text-transform:capitalize;</li></ul></li>
 
-            tt
-                text-transform:uppercase;
+            <li>bgc<ul>
+                <li>background-color:#fff;</li></ul></li>
 
-            tt:c
-                text-transform:capitalize;
+            <li>bgc:t<ul>
+                <li>background-color:transparent;</li></ul></li>
 
-            bgc
-                background-color:#fff;
+            <li>bgi<ul>
+                <li>background-image:url();</li></ul></li>
 
-            bgc:t
-                background-color:transparent;
+            <li>bgi:n<ul>
+                <li>background-image:none;</li></ul></li>
 
-            bgi
-                background-image:url();
+            <li>bgr:n<ul>
+                <li>background-repeat:no-repeat;</li></ul></li>
 
-            bgi:n
-                background-image:none;
+            <li>bgp<ul>
+                <li>background-position:0 0;</li></ul></li>
 
-            bgr
-                background-repeat:;
+            <li>bgsz<ul>
+                <li>background-size:;</li></ul></li>
 
-            bgr:n
-                background-repeat:no-repeat;
+            <li>bgsz:cv<ul>
+                <li>background-size:cover;</li></ul></li>
 
-            bgp
-                background-position:0 0;
+            <li>c<ul>
+                <li>color:#000;</li></ul></li>
 
-            bgsz
-                background-size:;
+            <li>c:r<ul>
+                <li>color:rgb(0, 0, 0);</li></ul></li>
 
-            bgsz:cv
-                background-size:cover;
+            <li>c:ra<ul>
+                <li>color:rgba(0, 0, 0, .5);</li></ul></li>
 
-            c
-                color:#000;
+            <li>bd<ul>
+                <li>border:;</li></ul></li>
 
-            c:r
-                color:rgb(0, 0, 0);
+            <li>bdt<ul>
+                <li>border-top:;</li></ul></li>
 
-            c:ra
-                color:rgba(0, 0, 0, .5);
+            <li>bdr<ul>
+                <li>border-right:;</li></ul></li>
 
-            bd
-                border:;
+            <li>bdb<ul>
+                <li>border-bottom:;</li></ul></li>
 
-            bdt
-                border-top:;
+            <li>bdl<ul>
+                <li>border-left:;</li></ul></li>
 
-            bdr
-                border-right:;
+            <li>bdrs<ul>
+                <li>border-radius:;</li></ul></li>
 
-            bdb
-                border-bottom:;
+            <li>lis:n<ul>
+                <li>list-style:none;</li></ul></li>
 
-            bdl
-                border-left:;
+            <li>!<ul>
+                <li>!important</li></ul></li>
 
-            bdrs
-                border-radius:;
+            <li>@f<ul>
+                <li>@font-face {<ul>
+                    <li>font-family:;</li>
+                    <li>src:url(|);</li></ul></li>
+                <li>}</li></ul></li>
 
-            lis:n
-                list-style:none;
+            <li>@m<ul>
+                <li>@media screen {</li>
+                <li></li>
+                <li>}</li></ul></li>
 
-            !
-                !important
-
-            @f
-                @font-face {
-                    font-family:;
-                    src:url(|);
-                }
-
-            @m
-                @media screen {
-
-                }
-
-
-          </li>
         </ul>
+      </div>
       </section>
     </div>
     <!--    SECTION CSS END      -->
@@ -1001,8 +985,6 @@
   <footer class="text-center">
     <p>&copy; Free to copy: Open source Project made by GuillaumeM59</p>
   </footer>
-  </div>
-  <!-- /container -->
 
 
 
