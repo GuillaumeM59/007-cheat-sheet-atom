@@ -6,10 +6,10 @@ Projet pour la semaine 2 et 3 de la formation simplon. Après avoir utilisé HTL
 Ce projet a pour base Twitter bootstrap: cheat-sheet HTML5 (3/7)
 
 
-[cheat-sheet HTML5](http://guillaumem59.github.io/005-cheat-sheet-html)
-[cheat-sheet CSS](http://guillaumem59.github.io/006-cheat-sheet-css)
-**[cheat-sheet EMMET](http://guillaumem59.github.io/007-cheat-sheet-emmet)**
-[Portfolio binôme](http://simplon-roubaix.github.io/portfolio-caroetguillaume)
-[remake Airbnb](http://guillaumem59.github.io/903-remake-airbnb)
-[remake Google](http://guillaumem59.github.io/901-remake-google)
-[remake Leboncoin](http://guillaumem59.github.io/902-remake-leboncoin)
+1. [cheat-sheet HTML5](http://guillaumem59.github.io/005-cheat-sheet-html)
+1. [cheat-sheet CSS](http://guillaumem59.github.io/006-cheat-sheet-css)
+1. **[cheat-sheet EMMET](http://guillaumem59.github.io/007-cheat-sheet-emmet)**
+1. [Portfolio binôme](http://simplon-roubaix.github.io/portfolio-caroetguillaume)
+1. [remake Airbnb](http://guillaumem59.github.io/903-remake-airbnb)
+1. [remake Google](http://guillaumem59.github.io/901-remake-google)
+1. [remake Leboncoin](http://guillaumem59.github.io/902-remake-leboncoin)
